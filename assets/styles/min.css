@@ -179,6 +179,19 @@ section {
     padding-block: 0.5em;
 }
 
+footer {
+    color: var(--link-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    margin-top: 2em;
+    border-top: 1px solid var(--accent-bg);
+}
+
+footer a {
+    color: var(--bg-btn);
+    text-decoration: underline;
+}
+
 @media (min-width: 60em) {
     .intro {
         grid-template-columns: 6fr 4fr;

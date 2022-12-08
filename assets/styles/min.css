@@ -72,11 +72,60 @@ a {
 
 :root {
     --link-color: #000;
+    --accent-bg: #000;
+    --accent-color: #ecbd22;
+    --bg-btn: #ff5100;
+    --typography: #fff;
+    --typography-secondary: #ccc;
+}
+
+.new_list li {
+    color: var(--typography);
+    padding-block: 1em;
+    border-bottom: 1px solid var(--typography-secondary);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--bg-btn);
+    color: var(--typography);
+    padding-block: 0.4em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding-inline: 1.5em;
+    margin-block: 1em;
+}
+
+.new_list li p {
+    font-size: 0.8em;
+    padding-top: 0.8em;
+}
+
+.new_list li:last-child {
+    color: var(--typography);
+    padding-block: 1em;
+    border: none;
+}
+
+.new_list li p {
+    color: var(--typography-secondary);
+}
+
+.color-accent {
+    color: var(--accent-color);
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.bg-accent {
+    background-color: var(--accent-bg);
 }
 
 .intro {
     display: grid;
-    gap: 2em;
+    gap: 1em;
 }
 
 

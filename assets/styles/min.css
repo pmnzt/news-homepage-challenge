@@ -179,6 +179,10 @@ section {
     padding-block: 0.5em;
 }
 
+.intro .img-lg {
+    display: none;
+}
+
 footer {
     color: var(--link-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -205,6 +209,15 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;
+    }
+
+    
+    .intro .img-lg {
+        display: block;
+    }
+
+    .intro .img-sm {
+        display: none;
     }
 }
 

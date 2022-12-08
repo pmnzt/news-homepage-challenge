@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    max-width: 39rem;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+header {
+    justify-content: space-between;
+    margin-block: 1.5em;
+    gap: 1em;
+}
+
+ul.nav_list {
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .logo {
+    font-size: 2em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+:root {
+    --link-color: #000;
+}

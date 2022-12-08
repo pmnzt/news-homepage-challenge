@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-size: 1.4em;
+}
+
 .body {
     max-width: 70em;
     margin: 0 auto;
@@ -151,7 +155,7 @@ a {
     padding-block: 0.5em;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 60em) {
     .intro {
         grid-template-columns: 6fr 4fr;
     }
@@ -167,7 +171,7 @@ a {
     }
 }
 
-@media (min-width: 60em) {
+@media (min-width: 80em) {
 
     .blog_list {
         display: grid;

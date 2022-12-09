@@ -18,15 +18,24 @@
 
 
   <div class="body"> 
-    <div class="container">
+    
+    <div class="container-md">
+
   <header class="flex-wrap flex">
     <div class="logo">
-      <strong>
-        W.
-      </strong>
+       
+        <strong>
+          W.
+        </strong>
+       
+      <div>
+        <img onclick="openMenu()" width="20x" height="20x" src="./assets/images/icon-menu.svg" alt="">
+      </div>
+      
     </div>
-    <nav>
-      <ul class="nav_list flex-wrap flex">
+    
+    <nav class="hide">
+      <ul class="nav_list">
         <li>
           <a href="/">Home</a>
         </li>
@@ -44,7 +53,11 @@
         </li>
       </ul>
     </nav>
+    
   </header>
+  </div>
+
+  <div class="container">
 
       <div class="intro">
         <section>
@@ -192,5 +205,14 @@
 
     </div>
 
+    <script>
+      const nav = document.querySelector('nav');
+      const ul = document.querySelector('header nav ul');
+
+      function openMenu () {
+        nav.classList.remove('hide');
+        ul.classList.add('active');
+      }
+    </script>
 </body>
 </html>

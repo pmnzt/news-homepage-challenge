@@ -208,7 +208,6 @@ header nav {
     height: 100%;
     top: 0;
     width: 100%;
-
 }
 
 header nav ul.active {
@@ -287,6 +286,44 @@ header nav ul li a {
 
     .intro .img-sm {
         display: none;
+    }
+
+    /* header */
+    header nav {
+        position:unset;
+        height: 100%;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    header nav ul { 
+        position: unset;
+        transition: none;
+        gap: 0 !important;
+    }
+
+    header nav ul li { 
+        padding: 0.5em;
+    }
+
+    header nav {
+        width: auto;
+    }
+
+    .hide {
+        visibility: visible;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .logo { 
+        width: fit-content;
     }
 }
 

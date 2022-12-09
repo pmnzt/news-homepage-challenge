@@ -36,6 +36,11 @@
     
     <nav class="hide">
       <ul class="nav_list">
+        <div class="close-menu">
+           <div></div>
+          <img onclick="hideMenu()" src="./assets/images/icon-menu-close.svg" alt="">   
+        </div>
+       
         <li>
           <a href="/">Home</a>
         </li>
@@ -213,6 +218,21 @@
         nav.classList.remove('hide');
         ul.classList.add('active');
       }
+
+      function hideMenu() {
+        nav.classList.add('hide');
+        ul.classList.remove('active');
+      }
+
+      nav.addEventListener('click', (e) => {
+        const el = e.target;
+        if(el.classList.value.includes('nav_list')) {
+          return
+        }
+
+        hideMenu();
+       
+      })
     </script>
 </body>
 </html>
